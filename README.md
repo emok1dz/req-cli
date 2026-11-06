@@ -121,7 +121,7 @@ npm test
 | `test/cli.test.mjs` | 帮助内容、请求构造、`--json`、17 种参数错误、缺配置、API 400/401/502、网络异常、SK 不泄露、project list |
 | `test/e2e.test.mjs` | 以子进程运行：真实退出码，以及 stdout / stderr 分流 |
 
-用假 AK/SK 请求真实接口时，会返回 `HTTP 401 APIGW.0301`，退出码为 1，并给出鉴权提示。这说明签名和请求链路正常。
+真实账号运行记录（创建工作项，以及只读 --help 的智能体驱动验证）见 [docs/real-run.md](docs/real-run.md)。用假 AK/SK 请求真实接口时，会返回 `HTTP 401 APIGW.0301`，退出码为 1，并给出鉴权提示。这说明签名和请求链路正常。
 
 ## 目录结构
 
